@@ -1,0 +1,545 @@
+{
+    "app": {
+        "name": "Kredefy",
+        "tagline": "Get Loans From People Who Trust You"
+    },
+    "landing": {
+        "hero": {
+            "title": "Get Loans From",
+            "titleHighlight": "People Who Trust You",
+            "subtitle": "No bank account? No problem. Build trust with your community and get help when you need it most."
+        },
+        "features": {
+            "noBank": {
+                "title": "No Bank Needed",
+                "desc": "Get loans without bank account or credit history"
+            },
+            "trustCircle": {
+                "title": "Trust Your Circle",
+                "desc": "Borrow from people who know you"
+            },
+            "helpOthers": {
+                "title": "Help Each Other",
+                "desc": "Vouch for friends, earn rewards"
+            }
+        },
+        "cta": "Get Started",
+        "valueProps": {
+            "phoneOnly": "Just Phone Number",
+            "fastLoan": "Loan in 5 Minutes",
+            "noHidden": "No Hidden Charges"
+        },
+        "footer": "Made with 💚 for India's Domestic Workers"
+    },
+    "onboarding": {
+        "skip": "Skip",
+        "next": "Next",
+        "getStarted": "Get Started",
+        "slides": {
+            "trust": {
+                "title": "Your Trust is Your Credit",
+                "desc": "Build your Bharosa Meter by being part of a trusted community. Your phone number is all you need!"
+            },
+            "circle": {
+                "title": "Join Trust Circles",
+                "desc": "Connect with neighbors, coworkers, and friends. Together, you can help each other with small loans."
+            },
+            "earn": {
+                "title": "Earn SAATHI Tokens",
+                "desc": "Get rewarded for timely repayments, vouching for others, and being a trusted member."
+            }
+        },
+        "highlights": {
+            "trust": {
+                "no_bank": "No bank account or credit history required",
+                "phone_only": "Just your phone number to get started",
+                "build_score": "Build your Bharosa Meter over time"
+            },
+            "circle": {
+                "trusted_people": "Connect with neighbors, coworkers & friends",
+                "small_loans": "Get small loans when you need them most",
+                "vouch_system": "Friends vouch for you, you vouch for them"
+            },
+            "earn": {
+                "earn_tokens": "Earn SAATHI tokens for good behavior",
+                "on_time_bonus": "Bonus rewards for on-time repayments",
+                "help_others": "Help others and grow your trust score"
+            }
+        }
+    },
+    "auth": {
+        "welcome": "Welcome to Kredefy",
+        "subtitle": "Enter your phone number to get started",
+        "phone": "Phone Number",
+        "sendOtp": "Send OTP via WhatsApp",
+        "verifyOtp": "Verify OTP",
+        "enterOtp": "Enter the 6-digit code sent to",
+        "resend": "Resend OTP",
+        "terms": "By continuing, you agree to our Terms & Privacy Policy",
+        "networkError": "Network Error"
+    },
+    "nav": {
+        "dashboard": "Dashboard",
+        "circles": "My Circles",
+        "loans": "Loans",
+        "vouch": "Vouch",
+        "wallet": "Wallet",
+        "diary": "Money Diary",
+        "achievements": "Achievements",
+        "emergency": "Emergency",
+        "settings": "Settings",
+        "profile": "Profile",
+        "logout": "Logout"
+    },
+    "dashboard": {
+        "greeting": {
+            "morning": "Good Morning",
+            "afternoon": "Good Afternoon",
+            "evening": "Good Evening"
+        },
+        "hello": "Hello",
+        "trustMessage": "Your community trusts you. Keep growing together!",
+        "bharosaMeter": "Your Bharosa Meter",
+        "saathiTokens": "SAATHI Tokens",
+        "whatToDo": "What do you want to do today?",
+        "actions": {
+            "getLoan": "Get a Loan",
+            "getLoanDesc": "Borrow from your circle",
+            "helpFriend": "Help a Friend",
+            "helpFriendDesc": "Vouch for someone you trust",
+            "emergency": "Emergency",
+            "emergencyDesc": "Need money urgently?"
+        },
+        "stats": {
+            "activeLoans": "Active Loans",
+            "myCircles": "My Circles",
+            "peopleTrustMe": "People Trust Me",
+            "iVouchFor": "I Vouch For",
+            "members": "members",
+            "vouched": "You're vouched!",
+            "karma": "Great karma!"
+        },
+        "circles": {
+            "title": "My Circles",
+            "viewAll": "View All",
+            "empty": "You haven't joined any circles yet",
+            "create": "Join or Create a Circle",
+            "pool": "Pool",
+            "membersCount": "members",
+            "staked": "staked",
+            "thisWeek": "this week",
+            "error": "Failed to load data. Please refresh the page."
+        }
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "Something went wrong",
+        "retry": "Retry",
+        "save": "Save",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "back": "Back",
+        "refresh": "Refresh",
+        "viewAll": "View All",
+        "members": "Members",
+        "amount": "Amount",
+        "status": "Status"
+    },
+    "settings": {
+        "title": "Settings",
+        "subtitle": "Manage your account and preferences",
+        "profile": {
+            "title": "Profile Information",
+            "fullName": "Full Name",
+            "fullNamePlaceholder": "Your full name",
+            "phone": "Phone Number",
+            "phoneNote": "Phone number cannot be changed",
+            "wallet": "Wallet Address",
+            "trustScore": "Trust Score"
+        },
+        "language": {
+            "title": "Language & Region",
+            "label": "Preferred Language",
+            "note": "Nova will speak in your preferred language"
+        },
+        "notifications": {
+            "title": "Notifications",
+            "whatsapp": {
+                "title": "WhatsApp Notifications",
+                "desc": "OTP, loan updates, reminders"
+            },
+            "emi": {
+                "title": "EMI Reminders",
+                "desc": "Get reminded before due dates"
+            },
+            "circle": {
+                "title": "Circle Updates",
+                "desc": "New loans, votes needed"
+            }
+        },
+        "security": {
+            "title": "Security",
+            "status": "Your account is secure",
+            "method": "You use OTP-based authentication",
+            "logout": "Logout from Kredefy"
+        },
+        "saveChanges": "Save Changes",
+        "updateSuccess": "Profile Updated! ✓",
+        "updateFailed": "Update Failed",
+        "refresh": "Refresh data",
+        "help": "Help & Support"
+    },
+    "nova": {
+        "tagline": "Your Money Helper",
+        "greeting": "Hi! I'm Nova, your money helper 💚",
+        "thinking": "Thinking...",
+        "error": "I'm having trouble connecting right now. Please try again! 💚",
+        "voiceError": "Sorry, I couldn't understand that. Could you type instead? 💚",
+        "waking": "Good to see you! 👋",
+        "askAnything": "Ask anything...",
+        "questions": {
+            "getLoan": "Get a loan",
+            "helpFriend": "Help a friend",
+            "checkScore": "Check my score"
+        }
+    },
+    "circles": {
+        "title": "My Circles",
+        "subtitle": "Your trusted groups who can help you get loans",
+        "create": "Create Circle",
+        "join": "Join Circle",
+        "members": "Members",
+        "poolSize": "Pool Size",
+        "inviteCode": "Invite Code",
+        "viewDetails": "View Details",
+        "requestLoan": "Request Loan",
+        "createNew": "Create New Circle",
+        "createNewDesc": "Start a trusted group with family or friends",
+        "noCircles": "No Circles Yet",
+        "noCirclesDesc": "Create a circle with your trusted people or join an existing one",
+        "joinCircle": "Join a Circle",
+        "joinCircleDesc": "Enter the invite code shared by circle admin",
+        "createCircle": "Create a Circle",
+        "createCircleDesc": "Start a trusted group with family or friends",
+        "circleName": "Circle Name",
+        "inviteCodeLabel": "Invite Code",
+        "creating": "Creating...",
+        "joinSuccess": "Joined Circle! 🎉",
+        "createSuccess": "Circle Created! 🎉",
+        "invalidCode": "Enter a valid invite code",
+        "invalidName": "Circle name must be at least 3 characters",
+        "copied": "Invite code copied!",
+        "joinCircleTitle": "Join a Circle",
+        "createCircleTitle": "Create a Circle"
+    },
+    "circleDetails": {
+        "members": "Circle Members",
+        "activeLoans": "Active Circle Decisions",
+        "poolHealth": "Circle Health",
+        "votingEnd": "Decision In",
+        "approve": "Approve",
+        "reject": "Reject",
+        "voted": "Voted",
+        "contribution": "Contribution",
+        "lastActive": "Last Active",
+        "memberTrust": "Member Trust",
+        "lowTrustWarning": "Caution: Circle contains low-trust members.",
+        "leaveCircle": "Leave Circle",
+        "voting": "Voting",
+        "approved": "Approved",
+        "rejected": "Rejected",
+        "health": {
+            "excellent": "Excellent",
+            "good": "Good",
+            "fair": "Fair",
+            "poor": "Poor",
+            "avgTrust": "Avg Trust"
+        },
+        "tabs": {
+            "members": "Members",
+            "active": "Active Decisions",
+            "history": "History"
+        },
+        "votingStatus": {
+            "consensus": "Circle Consensus",
+            "voted": "voted",
+            "pending": "appear here for voting.",
+            "newLoan": "New Loan Application",
+            "amountRequested": "Amount Requested",
+            "purpose": "Purpose"
+        },
+        "memberInfo": {
+            "admin": "Admin",
+            "joined": "Joined"
+        }
+    },
+    "loans": {
+        "title": "Loans",
+        "subtitle": "Manage your borrowing and help others",
+        "apply": "Apply for Loan",
+        "currentLoan": "Current Loan",
+        "alreadyPaid": "Already Paid",
+        "nextPayment": "Next Payment",
+        "completed": "Loans Completed",
+        "onTime": "On time!",
+        "myLoans": "My Loans",
+        "voteRequests": "Vote on Requests",
+        "history": "History",
+        "noActive": "No active loans",
+        "allClear": "You're all clear! Need to borrow?",
+        "allCaughtUp": "All caught up!",
+        "noPending": "No pending loan requests to vote on",
+        "noHistory": "No loan history yet",
+        "loanAmount": "Loan",
+        "nextDue": "Next EMI Due",
+        "payNow": "Pay Now",
+        "blockchainVerify": "Verify on Blockchain",
+        "repaymentProgress": "Paid",
+        "of": "of",
+        "toasts": {
+            "voteSuccess": "Vote Submitted! ✓",
+            "voteError": "Vote Failed"
+        },
+        "status": {
+            "replaying": "Repaying",
+            "repaying": "Repaying",
+            "disbursed": "Disbursed",
+            "voting": "Voting",
+            "approved": "Approved",
+            "rejected": "Rejected",
+            "completed": "Completed",
+            "defaulted": "Defaulted"
+        },
+        "stats": {
+            "active": "active",
+            "allClear": "You're all clear! Need to borrow?",
+            "allCaughtUp": "All caught up!",
+            "noPending": "No pending loan requests to vote on"
+        },
+        "historyTable": {
+            "purpose": "Purpose",
+            "amount": "Amount",
+            "date": "Date",
+            "status": "Status"
+        }
+    },
+    "wallet": {
+        "title": "Wallet & SAATHI Tokens",
+        "subtitle": "Your blockchain assets on Polygon Amoy",
+        "buy": "Buy SAATHI",
+        "buyDesc": "Purchase tokens to vouch for more friends",
+        "balance": "SAATHI Token Balance",
+        "available": "Available",
+        "staked": "Staked",
+        "pending": "Pending Rewards",
+        "claim": "Claim Now",
+        "walletAddress": "Polygon Amoy Wallet",
+        "copy": "Copy",
+        "copied": "Address copied!",
+        "explorer": "View on Explorer",
+        "howToEarn": "How to Earn SAATHI",
+        "repayOnTime": "Repay on Time",
+        "repayOnTimeDesc": "Pay your EMIs before due date",
+        "vouchFriends": "Vouch for Friends",
+        "vouchFriendsDesc": "Stake SAATHI to help trusted friends",
+        "completeLoans": "Complete Loans",
+        "completeLoansDesc": "Finish repaying any loan in full",
+        "history": "Transaction History",
+        "noTx": "No transactions yet",
+        "startEarning": "Start earning by repaying loans on time!",
+        "toasts": {
+            "claimSuccess": "Claimed",
+            "claimError": "Claim failed",
+            "buySuccess": "Purchase Successful! 🎉",
+            "buyError": "Purchase Failed"
+        },
+        "buyModal": {
+            "title": "Buy SAATHI Tokens",
+            "amount": "Select Amount",
+            "price": "Price",
+            "pay": "Pay with UPI",
+            "processing": "Processing Payment..."
+        },
+        "errors": {
+            "load": "Failed to load wallet data. Please refresh."
+        },
+        "historyTable": {
+            "type": "Type",
+            "desc": "Description",
+            "date": "Date",
+            "amount": "Amount"
+        },
+        "types": {
+            "earn": "Earn",
+            "spend": "Spend",
+            "stake": "Stake",
+            "unstake": "Unstake",
+            "reward": "Reward",
+            "slash": "Slash"
+        }
+    },
+    "vouch": {
+        "title": "Vouch for Friends",
+        "subtitle": "Help your friends build trust by vouching for them",
+        "howItWorks": {
+            "title": "How Vouching Works",
+            "desc": "Stake your SAATHI tokens to vouch for someone. If they repay on time, you both earn rewards! If they don't, you lose some tokens. Choose wisely!"
+        },
+        "stats": {
+            "iVouchFor": "I Vouch For",
+            "vouchForMe": "Vouch for Me",
+            "saathiStaked": "SAATHI Staked",
+            "available": "Available"
+        },
+        "given": {
+            "title": "People I Vouch For",
+            "button": "Vouch",
+            "since": "Since",
+            "staked": "staked",
+            "empty": "You haven't vouched for anyone yet",
+            "cta": "Vouch for a Friend"
+        },
+        "received": {
+            "title": "People Who Vouch for Me",
+            "backing": "backing you",
+            "empty": "No one has vouched for you yet",
+            "desc": "Ask trusted friends or family to vouch for you!"
+        },
+        "modal": {
+            "title": "Vouch for Someone",
+            "subtitle": "Choose who to vouch for and how much to stake",
+            "selectCircle": "Select Circle",
+            "joinFirst": "Join a circle first",
+            "who": "Who do you vouch for?",
+            "noMembers": "No members to vouch for",
+            "level": "Vouch Level",
+            "trustIncrease": "trust",
+            "stake": "SAATHI to Stake",
+            "needAtLeast": "You need at least",
+            "tokens": "SAATHI tokens",
+            "button": "Vouch with"
+        },
+        "levels": {
+            "basic": "Basic",
+            "strong": "Strong",
+            "maximum": "Maximum"
+        },
+        "toasts": {
+            "createSuccess": "Vouch Created! 💚",
+            "createError": "Failed to create vouch",
+            "selectPerson": "Please select a person to vouch for",
+            "revokeSuccess": "Vouch Revoked",
+            "revokeError": "Failed to revoke"
+        },
+        "errors": {
+            "load": "Failed to load vouches. Please refresh."
+        }
+    },
+    "achievements": {
+        "title": "Achievements & Trust",
+        "subtitle": "Your progress and reputation in the community",
+        "bharosaMeter": "Your Bharosa Meter",
+        "labels": {
+            "starting": "Starting",
+            "building": "Building",
+            "good": "Good",
+            "excellent": "Excellent"
+        },
+        "pointsThisMonth": "points this month!",
+        "growth": "Your Growth",
+        "howCalculated": "How Your Score is Calculated",
+        "learnMore": "Learn More",
+        "factors": {
+            "repayment": "Repayment History",
+            "vouches": "Vouches Received",
+            "circles": "Circle Standing",
+            "age": "Account Age",
+            "diary": "Financial Diary"
+        },
+        "weight": "Weight",
+        "noBreakdown": "No score breakdown available",
+        "tipTitle": "Tip to grow faster"
+    },
+    "diary": {
+        "title": "Financial Diary",
+        "subtitle": "Track your income and expenses",
+        "addEntry": "Add Entry",
+        "totalIncome": "Total Income",
+        "totalExpense": "Total Expense",
+        "balance": "Balance",
+        "thisMonth": "This month",
+        "savings": "Savings",
+        "deficit": "Deficit",
+        "recentTransactions": "Recent Transactions",
+        "date": "Date",
+        "category": "Category",
+        "notes": "Notes",
+        "amount": "Amount",
+        "noEntries": "No entries yet",
+        "startTracking": "Start tracking your money!",
+        "addFirst": "Add First Entry",
+        "modal": {
+            "title": "Add Entry",
+            "subtitle": "Track income or expense",
+            "voice": "Voice",
+            "stop": "Stop",
+            "income": "Income",
+            "expense": "Expense",
+            "amountLabel": "Amount (₹)",
+            "categoryLabel": "Category",
+            "selectCategory": "Select category",
+            "notesLabel": "Notes (optional)",
+            "notesPlaceholder": "What was this for?",
+            "addButton": "Add"
+        },
+        "categories": {
+            "food": "Food",
+            "transport": "Transport",
+            "bills": "Bills",
+            "shopping": "Shopping",
+            "health": "Health",
+            "education": "Education",
+            "other": "Other",
+            "salary": "Salary",
+            "business": "Business",
+            "gift": "Gift",
+            "interest": "Interest"
+        }
+    },
+    "emergency": {
+        "tag": "Turant Paisa - Instant Help",
+        "title": "Emergency Fund",
+        "subtitle": "Get instant money when you need it most - no voting, no waiting",
+        "howItWorks": {
+            "title": "How Turant Paisa Works",
+            "desc": "If your trust score is above 60 and your circle has emergency funds, you can get instant money for real emergencies. No voting needed! Money is sent within 2 hours to your UPI."
+        },
+        "eligibility": "Your Eligibility",
+        "eligible": "Eligible",
+        "notEligible": "Not Eligible",
+        "trustScore": "Trust Score",
+        "trustCheck": {
+            "pass": "✓ Your trust score qualifies you for emergency funds",
+            "fail": "✗ Need at least 60 trust score for emergency access"
+        },
+        "maxAmount": "Maximum Emergency Amount",
+        "processing": {
+            "title": "Fast Processing",
+            "desc": "Money sent to your UPI within 2 hours"
+        },
+        "request": {
+            "title": "Request Emergency Fund",
+            "amount": "Amount Needed",
+            "reason": "What's the emergency?",
+            "button": "Request",
+            "now": "Now",
+            "warning": "Emergency funds are for genuine emergencies only. Misuse may affect your trust score."
+        },
+        "reasons": {
+            "medical": "Medical Emergency",
+            "accident": "Accident",
+            "disaster": "Natural Disaster",
+            "death": "Family Emergency"
+        }
+    }
+}

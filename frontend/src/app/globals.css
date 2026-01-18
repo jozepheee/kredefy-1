@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Kredefy Brand Colors - Warm Teal/Emerald */
+  --gradient-start: #0d9488;
+  --gradient-mid: #10b981;
+  --gradient-end: #34d399;
+
+  /* Trust Score Colors */
+  --trust-low: #ef4444;
+  --trust-medium: #f59e0b;
+  --trust-high: #10b981;
+  --trust-excellent: #059669;
+
+  /* Gamification */
+  --gold: #fbbf24;
+  --silver: #9ca3af;
+  --bronze: #d97706;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #f0fdfa 0%, #ecfdf5 50%, #f0fdf4 100%);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradient mesh background */
+.gradient-mesh {
+  background:
+    radial-gradient(at 40% 20%, rgba(16, 185, 129, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(13, 148, 136, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(52, 211, 153, 0.1) 0px, transparent 50%),
+    linear-gradient(135deg, #f0fdfa 0%, #ecfdf5 50%, #f0fdf4 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #10b981, #0d9488);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #059669, #0f766e);
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+/* Bharosa Meter Animation */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 10px rgba(16, 185, 129, 0.1);
+  }
+}
+
+.bharosa-pulse {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Trust Score Ring */
+@keyframes rotate-ring {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.trust-ring {
+  animation: rotate-ring 20s linear infinite;
+}
+
+/* Achievement Badge Shine */
+@keyframes badge-shine {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.achievement-badge {
+  background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      transparent 100%);
+  background-size: 200% 100%;
+  animation: badge-shine 3s ease-in-out infinite;
+}
+
+/* SAATHI Token Glow */
+@keyframes token-glow {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 3px #fbbf24);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 10px #fbbf24);
+  }
+}
+
+.saathi-glow {
+  animation: token-glow 2s ease-in-out infinite;
+}
+
+/* Celebration Confetti */
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.confetti {
+  animation: confetti-fall 3s ease-in-out forwards;
+}
