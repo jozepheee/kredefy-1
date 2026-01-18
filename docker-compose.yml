@@ -1,0 +1,116 @@
+version: "3.9"
+
+services:
+  # ============================================
+  # FastAPI Backend
+  # ============================================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: kredefy-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      - DODO_API_KEY=${DODO_API_KEY}
+      - DODO_WEBHOOK_SECRET=${DODO_WEBHOOK_SECRET}
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+      - TWILIO_PHONE=${TWILIO_PHONE}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY}
+      - POLYGON_RPC_URL=${POLYGON_RPC_URL}
+      - BLOCKCHAIN_PRIVATE_KEY=${BLOCKCHAIN_PRIVATE_KEY}
+      - SAATHI_TOKEN_ADDRESS=${SAATHI_TOKEN_ADDRESS}
+      - TRUST_SCORE_ADDRESS=${TRUST_SCORE_ADDRESS}
+      - LOAN_REGISTRY_ADDRESS=${LOAN_REGISTRY_ADDRESS}
+      - CIRCLE_DAO_ADDRESS=${CIRCLE_DAO_ADDRESS}
+      - EMERGENCY_FUND_ADDRESS=${EMERGENCY_FUND_ADDRESS}
+      - MASTRA_SERVICE_URL=http://mastra:4000
+    volumes:
+      - ./backend:/app
+      - /tmp/kredefy_tts_cache:/tmp/kredefy_tts_cache
+    depends_on:
+      - mastra
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - kredefy-network
+
+  # ============================================
+  # Mastra AI Agents Service (TypeScript)
+  # ============================================
+  mastra:
+    build:
+      context: ./mastra
+      dockerfile: Dockerfile
+    container_name: kredefy-mastra
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - MASTRA_PORT=4000
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - kredefy-network
+
+  # ============================================
+  # Next.js Frontend
+  # ============================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: kredefy-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:8000/api/v1
+      - NEXT_PUBLIC_MASTRA_URL=http://mastra:4000
+    depends_on:
+      - backend
+      - mastra
+    restart: unless-stopped
+    networks:
+      - kredefy-network
+
+  # ============================================
+  # Nginx Reverse Proxy
+  # ============================================
+  nginx:
+    image: nginx:alpine
+    container_name: kredefy-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - backend
+      - frontend
+      - mastra
+    restart: unless-stopped
+    networks:
+      - kredefy-network
+
+networks:
+  kredefy-network:
+    driver: bridge
+
+volumes:
+  tts_cache:

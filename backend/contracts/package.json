@@ -1,0 +1,18 @@
+{
+    "name": "kredefy-contracts",
+    "version": "1.0.0",
+    "description": "Kredefy Smart Contracts - Polygon Deployment",
+    "scripts": {
+        "compile": "hardhat compile",
+        "test": "hardhat test",
+        "deploy:amoy": "hardhat run scripts/deploy.ts --network amoy",
+        "deploy:mainnet": "hardhat run scripts/deploy.ts --network polygon",
+        "verify": "hardhat verify"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+        "@openzeppelin/contracts": "^5.0.0",
+        "hardhat": "^2.19.0",
+        "dotenv": "^16.3.1"
+    }
+}
