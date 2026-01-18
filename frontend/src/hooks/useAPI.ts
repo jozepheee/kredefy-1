@@ -19,9 +19,10 @@ interface UseAPIResult<T> {
 
 export function useAPI<T>(
     apiFn: (...args: any[]) => Promise<T>,
-    options: UseAPIOptions<T> = {}
+    options?: UseAPIOptions<T> | null
 ): UseAPIResult<T> {
-    const { onSuccess, onError, immediate = false } = options || {}
+    const safeOptions = options ?? {}
+    const { onSuccess, onError, immediate = false } = safeOptions
     const [data, setData] = useState<T | null>(null)
     const [error, setError] = useState<Error | null>(null)
     const [isLoading, setIsLoading] = useState(immediate)
